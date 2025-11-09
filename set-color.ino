@@ -6,7 +6,7 @@ ModulinoPixels leds;
 int brightness = 10;
 
 // Function to set all LEDs to the same color at once
-void set_color(uint8_t color) {
+void set_color(ModulinoColor color) {
   for (int i = 0; i < 8; i++) {
     leds.set(i, color, brightness);
   }
